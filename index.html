@@ -64,10 +64,10 @@
 	<div class="container">
 		<div class="form-container">
 			<form>
-				<label for="name_0">Name:</label>
+				<label for="name_0">Tab Name:</label>
 				<input type="text" id="name_0" name="name_0"><br><br>
 
-				<label for="description_0">Description:</label>
+				<label for="description_0">Tab Content:</label>
 				<textarea id="description_0" name="description_0"></textarea><br><br>
 
 				<button type="button" onclick="addFaq(this)">Add</button>
@@ -90,7 +90,7 @@
 			let name = nameInput.value;
 			let description = form.querySelector("textarea").value;
 
-			let faq = { name: name, description: description };
+			let faq = { tabName: name, tabCont: description };
 			faqs.push(faq);
 
 			let output = form.parentElement.nextElementSibling.querySelector("#output");
